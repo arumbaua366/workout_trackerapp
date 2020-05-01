@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const routes = require("./controllers/controller.js");
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
@@ -25,5 +25,5 @@ app.use(require("./routes/routes.js"));
 app.use(require("./routes/HTML-routes"));
 
 app.listen(PORT, () => {
-  console.log(`go google localhost: ${PORT}!`);
+  console.log(`DO ITTTT localhost: ${PORT}!`);
 });
