@@ -42,4 +42,8 @@ const workout = new Schema({
   ],
 });
 
+//creating an instance of a model https://mongoosejs.com/docs/models.html
 const Workout = mongoose.model("Workout", workout);
+
+// export
+module.exports = Workout;
