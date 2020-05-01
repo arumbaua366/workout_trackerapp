@@ -1,16 +1,15 @@
-//  using mongoose to handle my schema
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-// creating how I want schema to look
+// Mongoose schema
 const workout = new Schema({
-  // input date automatically
+  // date is inputted automatically
   day: {
     type: Date,
     default: Date.now,
   },
-  // based on inputs in html
+  
   exercises: [
     {
       type: {
@@ -43,5 +42,4 @@ const workout = new Schema({
   ],
 });
 
-// creating an instance of model at mongoosejs.com/doc/models.html
-const Workout = mongoose.mondel(`Workout`, workout);
+const Workout = mongoose.model("Workout", workout);
