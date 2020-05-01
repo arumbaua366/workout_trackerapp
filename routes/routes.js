@@ -29,7 +29,6 @@ router.put("/api/workouts/:id", ({ body, params }, res) => {
       })
   });
   
-  //finding all workouts for the stats page
   router.get("/api/workouts/range", ({ query }, res) => {
     Gyming.find()
     .then(dbWorkouts => {
